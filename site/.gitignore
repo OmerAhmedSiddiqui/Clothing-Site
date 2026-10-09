@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Rendered source film (regenerate with scripts/make-placeholder-film.sh)
+film-src

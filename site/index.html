@@ -3,194 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maison Ardent — Autumn / Winter 2026</title>
-    <meta name="description" content="Maison Ardent. Quiet tailoring, made slowly in small runs." />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a1814'/><text x='16' y='22' font-family='Georgia' font-size='18' fill='%23efeae2' text-anchor='middle'>A</text></svg>" />
-    <link rel="preload" as="image" href="/img/hero.webp" imagesrcset="/img/hero-800.webp 800w, /img/hero.webp 1600w" imagesizes="100vw" fetchpriority="high" />
+    <title>Maison Ardent — The Camel Coat</title>
+    <meta name="description" content="Maison Ardent, Houston. The camel coat, cut by hand in double-faced wool. Scroll to watch it come together." />
+    <meta name="theme-color" content="#0d0b09" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230d0b09'/><text x='16' y='22' font-family='Georgia' font-size='18' fill='%23d9b98c' text-anchor='middle'>A</text></svg>" />
+    <link rel="preload" as="image" href="/film/frame_0001.webp" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   </head>
-  <body>
-    <!-- Loader -->
+  <body class="is-loading">
+    <!-- LOADER -->
     <div class="loader" aria-hidden="true">
-      <div class="loader__word"><span>M</span><span>A</span><span>I</span><span>S</span><span>O</span><span>N</span>&nbsp;<span>A</span><span>R</span><span>D</span><span>E</span><span>N</span><span>T</span></div>
-      <div class="loader__count"><span class="js-count">0</span>%</div>
+      <div class="loader__mark">A</div>
+      <div class="loader__name">Maison Ardent</div>
+      <div class="loader__bar"><span class="js-load-fill"></span></div>
+      <div class="loader__pct"><span class="js-load-pct">0</span>%</div>
     </div>
 
-    <!-- Nav -->
+    <!-- NAV -->
     <header class="nav">
       <a href="#top" class="nav__logo">Maison Ardent</a>
-      <nav class="nav__links" aria-label="Main">
-        <a href="#fabric">Fabric</a>
-        <a href="#cut">The Cut</a>
-        <a href="#collection">Collection</a>
-        <a href="#atelier">Atelier</a>
+      <nav class="nav__links">
+        <a href="#film">The Film</a>
+        <a href="#coat">The Coat</a>
+        <a href="#fitting" class="nav__cta">Book a fitting</a>
       </nav>
-      <a href="#atelier" class="nav__cta">Book a fitting</a>
     </header>
 
     <main id="top">
-      <!-- 1. HERO: frame grows to full screen -->
-      <section class="hero">
-        <div class="hero__pin">
-          <h1 class="hero__title">
-            <span class="hero__line hero__line--l"><span class="hero__in">Maison</span></span>
-            <span class="hero__line hero__line--r"><span class="hero__in">Ardent</span></span>
-          </h1>
-          <div class="hero__frame">
-            <img src="/img/hero.webp" srcset="/img/hero-800.webp 800w, /img/hero.webp 1600w" sizes="100vw" decoding="async" fetchpriority="high" alt="Model in a camel wool suit" />
+      <!-- SCROLL-DRIVEN FILM -->
+      <section class="film" id="film">
+        <div class="film__sticky">
+          <canvas class="film__canvas" aria-label="Film of the camel coat, played by scrolling"></canvas>
+          <div class="film__vignette"></div>
+          <div class="film__grain"></div>
+
+          <div class="chapters">
+            <article class="chapter chapter--hero" data-from="0" data-to="0.09" data-align="center">
+              <span class="chapter__kicker" data-depth="24">Autumn / Winter 2026 · Houston</span>
+              <h1 class="chapter__title" data-depth="0">Maison <em>Ardent</em></h1>
+              <span class="chapter__sub" data-depth="-28">The camel coat, cut by hand</span>
+              <div class="cue" data-depth="-44"><span>Scroll to begin</span><i></i></div>
+            </article>
+
+            <article class="chapter" data-from="0.2" data-to="0.35" data-align="left">
+              <span class="chapter__index" data-depth="60">01</span>
+              <span class="chapter__kicker" data-depth="32">The Shape</span>
+              <h2 class="chapter__title" data-depth="0">Made to<br /><em>move with you</em></h2>
+              <p class="chapter__body" data-depth="-28">A dropped shoulder and a long, easy line. It sits lightly on a sweater in October and still has room for a blazer by January.</p>
+            </article>
+
+            <article class="chapter" data-from="0.39" data-to="0.53" data-align="right">
+              <span class="chapter__index" data-depth="60">02</span>
+              <span class="chapter__kicker" data-depth="32">The Wrap</span>
+              <h2 class="chapter__title" data-depth="0">Tied,<br /><em>never buttoned</em></h2>
+              <p class="chapter__body" data-depth="-28">A self-belt in the same cloth, stitched with no seam showing at the waist. You choose how tight. The coat goes along with it.</p>
+            </article>
+
+            <article class="chapter" data-from="0.57" data-to="0.72" data-align="left">
+              <span class="chapter__index" data-depth="60">03</span>
+              <span class="chapter__kicker" data-depth="32">The Cloth</span>
+              <h2 class="chapter__title" data-depth="0">Felt before<br /><em>it is seen</em></h2>
+              <p class="chapter__body" data-depth="-28">Double-faced camel wool, 680 grams to the metre, woven in Biella. Two layers bonded together, so the coat has no lining and no weight it doesn't need.</p>
+            </article>
+
+            <article class="chapter chapter--low" data-from="0.79" data-to="0.97" data-align="center">
+              <span class="chapter__index" data-depth="60">04</span>
+              <span class="chapter__kicker" data-depth="32">The Fitting</span>
+              <h2 class="chapter__title" data-depth="0">Cut for <em>one person</em></h2>
+              <p class="chapter__body" data-depth="-28">Every coat is cut to your measurements in our Houston atelier and finished by hand over three weeks.</p>
+            </article>
           </div>
-          <p class="hero__meta hero__meta--l">Autumn / Winter<br />2026</p>
-          <p class="hero__meta hero__meta--r">Houston<br />Texas</p>
-          <div class="hero__scroll">Scroll</div>
-          <div class="hero__over">
-            <p class="eyebrow">The Collection</p>
-            <h2>Made slowly.<br /><em>Worn for years.</em></h2>
+
+          <div class="hud">
+            <span class="hud__label">Maison Ardent · The Camel Coat</span>
+            <span class="hud__label hud__label--r"><b class="js-chapter">00</b> / 04</span>
+            <div class="hud__bar"><span class="js-progress"></span></div>
           </div>
         </div>
       </section>
 
-      <!-- 2. MANIFESTO: words light up as you scroll -->
-      <section class="manifesto">
-        <p class="eyebrow">Our belief</p>
-        <p class="manifesto__text js-words">
-          We make fewer things, and we make them well. Every piece begins as a bolt of natural cloth, is cut by hand in small runs, and is finished to outlast the season it was made for.
-        </p>
-      </section>
-
-      <!-- 3. CHAPTER I: FABRIC -->
-      <section class="fabric" id="fabric">
-        <div class="fabric__pin">
-          <div class="fabric__bg"><img src="/img/linen.webp" srcset="/img/linen-800.webp 800w, /img/linen.webp 1600w" sizes="100vw" decoding="async" alt="" /></div>
-          <div class="fabric__copy">
-            <p class="eyebrow">Chapter I</p>
-            <h2>The Fabric</h2>
-            <p>Italian wool from a single family mill in Biella. Belgian linen, washed twice for softness. Nothing synthetic, nothing rushed.</p>
-          </div>
-          <div class="fabric__card fabric__card--a"><img src="/img/scarf.webp" srcset="/img/scarf-800.webp 800w, /img/scarf.webp 1600w" sizes="(max-width: 820px) 50vw, 25vw" decoding="async" alt="Woman wrapped in a soft wool scarf" /></div>
-          <div class="fabric__card fabric__card--b"><img src="/img/mono-knit.webp" srcset="/img/mono-knit-800.webp 800w, /img/mono-knit.webp 1600w" sizes="(max-width: 820px) 50vw, 25vw" decoding="async" alt="Model in a white knit sweater" /></div>
-          <ul class="fabric__stats">
-            <li><strong class="js-num" data-to="100">0</strong><span>% natural fibres</span></li>
-            <li><strong class="js-num" data-to="40">0</strong><span>hours per coat</span></li>
-            <li><strong class="js-num" data-to="12">0</strong><span>pieces per run</span></li>
-          </ul>
+      <!-- AFTER THE FILM -->
+      <section class="coat" id="coat">
+        <div class="coat__intro reveal">
+          <p class="eyebrow">The Collection · No. 01</p>
+          <h2 class="coat__head">Most coats are bought for one winter.<br /><em>This one is made for the next twenty.</em></h2>
         </div>
-      </section>
 
-      <!-- 4. CHAPTER II: THE CUT (horizontal scroll) -->
-      <section class="cut" id="cut">
-        <div class="cut__pin">
-          <div class="cut__head">
-            <p class="eyebrow">Chapter II</p>
-            <h2>The Cut</h2>
-          </div>
-          <div class="cut__track">
-            <figure class="cut__item">
-              <div class="cut__img"><img src="/img/coat-belted.webp" srcset="/img/coat-belted-800.webp 800w, /img/coat-belted.webp 1600w" sizes="(max-width: 820px) 100vw, 30vw" decoding="async" alt="Belted camel wrap coat" /></div>
-              <figcaption><span>01</span> The Wrap Coat <em>Double-faced wool</em></figcaption>
-            </figure>
-            <figure class="cut__item cut__item--tall">
-              <div class="cut__img"><img src="/img/coat-camel.webp" srcset="/img/coat-camel-800.webp 800w, /img/coat-camel.webp 1600w" sizes="(max-width: 820px) 100vw, 30vw" decoding="async" alt="Man in a camel overcoat and turtleneck" /></div>
-              <figcaption><span>02</span> The Overcoat <em>Camel hair blend</em></figcaption>
-            </figure>
-            <figure class="cut__item">
-              <div class="cut__img"><img src="/img/suit-copper.webp" srcset="/img/suit-copper-800.webp 800w, /img/suit-copper.webp 1600w" sizes="(max-width: 820px) 100vw, 30vw" decoding="async" alt="Woman in a brown suit holding a handbag" /></div>
-              <figcaption><span>03</span> The Soft Suit <em>Brushed flannel</em></figcaption>
-            </figure>
-            <figure class="cut__item cut__item--tall">
-              <div class="cut__img"><img src="/img/coat-street.webp" srcset="/img/coat-street-800.webp 800w, /img/coat-street.webp 1600w" sizes="(max-width: 820px) 100vw, 30vw" decoding="async" alt="Man in an ivory trench coat on a city street" /></div>
-              <figcaption><span>04</span> The Trench <em>Cotton gabardine</em></figcaption>
-            </figure>
-            <figure class="cut__item">
-              <div class="cut__img"><img src="/img/trench.webp" srcset="/img/trench-800.webp 800w, /img/trench.webp 1600w" sizes="(max-width: 820px) 100vw, 30vw" decoding="async" alt="Woman in a long stone trench coat" /></div>
-              <figcaption><span>05</span> The Long Trench <em>Waxed cotton</em></figcaption>
-            </figure>
-            <div class="cut__end">
-              <p>Five silhouettes.<br /><em>One philosophy.</em></p>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide reveal">
+            <img src="/img/coat-belted.webp" srcset="/img/coat-belted-800.webp 800w, /img/coat-belted.webp 1600w" sizes="(max-width: 820px) 100vw, 60vw" alt="Belted camel wrap coat" loading="lazy" decoding="async" />
+            <figcaption>The wrap · tied at the waist</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="/img/linen.webp" srcset="/img/linen-800.webp 800w, /img/linen.webp 1600w" sizes="(max-width: 820px) 100vw, 30vw" alt="Close-up of woven cloth" loading="lazy" decoding="async" />
+            <figcaption>Double-faced wool · Biella</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="/img/coat-camel.webp" srcset="/img/coat-camel-800.webp 800w, /img/coat-camel.webp 1600w" sizes="(max-width: 820px) 100vw, 30vw" alt="Man in a camel overcoat and turtleneck" loading="lazy" decoding="async" />
+            <figcaption>The overcoat · worn open</figcaption>
+          </figure>
+        </div>
+
+        <div class="fitting reveal" id="fitting">
+          <span class="fitting__price">$890</span>
+          <form class="fitting__body js-fitting">
+            <h3>Book a private fitting</h3>
+            <p>Forty-five minutes with our tailor, a coffee, and every measurement taken by hand. Choose a day and we'll call you to confirm the time.</p>
+            <div class="days js-days" role="radiogroup" aria-label="Preferred day">
+              <button type="button" class="day" role="radio" aria-checked="false">Tue</button>
+              <button type="button" class="day" role="radio" aria-checked="false">Wed</button>
+              <button type="button" class="day is-active" role="radio" aria-checked="true">Thu</button>
+              <button type="button" class="day" role="radio" aria-checked="false">Fri</button>
+              <button type="button" class="day" role="radio" aria-checked="false">Sat</button>
             </div>
+            <div class="fields">
+              <input type="text" placeholder="Your name" aria-label="Your name" required />
+              <input type="tel" placeholder="Phone number" aria-label="Phone number" required />
+            </div>
+            <button type="submit" class="btn-book">Request a fitting</button>
+          </form>
+        </div>
+
+        <footer class="foot">
+          <div class="foot__brand">Ardent</div>
+          <div class="foot__cols">
+            <div><span>Visit</span><p>Upper Kirby<br />Houston, Texas</p></div>
+            <div><span>Hours</span><p>Tue – Sat · 11am – 7pm<br />Sun · 12pm – 5pm</p></div>
+            <div><span>Contact</span><p>(713) 555-0142<br />hello@maisonardent.com</p></div>
           </div>
-        </div>
-      </section>
-
-      <!-- 5. CHAPTER III: MONOCHROME (parallax) -->
-      <section class="mono">
-        <p class="eyebrow mono__eyebrow">Chapter III</p>
-        <h2 class="mono__title"><span class="js-split">Quiet is</span><br /><em class="js-split">the new loud.</em></h2>
-        <div class="mono__img mono__img--a" data-speed="-0.25"><img src="/img/mono-blazer.webp" srcset="/img/mono-blazer-800.webp 800w, /img/mono-blazer.webp 1600w" sizes="(max-width: 820px) 50vw, 25vw" decoding="async" alt="Black and white portrait in a tailored blazer" /></div>
-        <div class="mono__img mono__img--b" data-speed="0.2"><img src="/img/mono-white.webp" srcset="/img/mono-white-800.webp 800w, /img/mono-white.webp 1600w" sizes="(max-width: 820px) 50vw, 25vw" decoding="async" alt="Black and white portrait in a white suit" /></div>
-        <div class="mono__img mono__img--c" data-speed="-0.1"><img src="/img/walk.webp" srcset="/img/walk-800.webp 800w, /img/walk.webp 1600w" sizes="(max-width: 820px) 50vw, 25vw" decoding="async" alt="Model walking in wide white trousers" /></div>
-        <p class="mono__note">Black, ivory, stone. A wardrobe that doesn't ask for attention, and gets it anyway.</p>
-      </section>
-
-      <!-- 6. COLLECTION -->
-      <section class="collection" id="collection">
-        <div class="collection__head">
-          <p class="eyebrow">Shop</p>
-          <h2>The Collection</h2>
-          <a href="#atelier" class="link">View all pieces</a>
-        </div>
-        <div class="grid">
-          <article class="product">
-            <div class="product__img"><img src="/img/blazer-sky.webp" srcset="/img/blazer-sky-800.webp 800w, /img/blazer-sky.webp 1600w" sizes="(max-width: 820px) 50vw, 33vw" decoding="async" alt="Tan blazer" loading="lazy" /></div>
-            <div class="product__info"><h3>Sienna Blazer</h3><p>$480</p></div>
-          </article>
-          <article class="product">
-            <div class="product__img"><img src="/img/lounge.webp" srcset="/img/lounge-800.webp 800w, /img/lounge.webp 1600w" sizes="(max-width: 820px) 50vw, 33vw" decoding="async" alt="Cream knit and wide trousers" loading="lazy" /></div>
-            <div class="product__info"><h3>Stone Lounge Set</h3><p>$360</p></div>
-          </article>
-          <article class="product">
-            <div class="product__img"><img src="/img/scarf.webp" srcset="/img/scarf-800.webp 800w, /img/scarf.webp 1600w" sizes="(max-width: 820px) 50vw, 33vw" decoding="async" alt="Oversized camel wool scarf" loading="lazy" /></div>
-            <div class="product__info"><h3>Biella Wool Scarf</h3><p>$185</p></div>
-          </article>
-          <article class="product">
-            <div class="product__img"><img src="/img/jacket.webp" srcset="/img/jacket-800.webp 800w, /img/jacket.webp 1600w" sizes="(max-width: 820px) 50vw, 33vw" decoding="async" alt="Black suit jacket on a table" loading="lazy" /></div>
-            <div class="product__info"><h3>Noir Evening Jacket</h3><p>$520</p></div>
-          </article>
-          <article class="product">
-            <div class="product__img"><img src="/img/coat-camel.webp" srcset="/img/coat-camel-800.webp 800w, /img/coat-camel.webp 1600w" sizes="(max-width: 820px) 50vw, 33vw" decoding="async" alt="Camel overcoat" loading="lazy" /></div>
-            <div class="product__info"><h3>The Overcoat</h3><p>$890</p></div>
-          </article>
-          <article class="product">
-            <div class="product__img"><img src="/img/mono-knit.webp" srcset="/img/mono-knit-800.webp 800w, /img/mono-knit.webp 1600w" sizes="(max-width: 820px) 50vw, 33vw" decoding="async" alt="White knit sweater" loading="lazy" /></div>
-            <div class="product__info"><h3>Ivory Cashmere Knit</h3><p>$340</p></div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 7. ATELIER / VISIT -->
-      <section class="atelier" id="atelier">
-        <div class="atelier__img"><img src="/img/atelier.webp" srcset="/img/atelier-800.webp 800w, /img/atelier.webp 1600w" sizes="100vw" decoding="async" alt="Inside the boutique, neutral garments on rails" loading="lazy" /></div>
-        <div class="atelier__copy">
-          <p class="eyebrow">Visit</p>
-          <h2>The Atelier</h2>
-          <p>Come in for a private fitting. We'll pour you a coffee, take your measurements, and help you find the pieces you'll still be wearing in ten years.</p>
-          <dl class="atelier__info">
-            <div><dt>Address</dt><dd>Upper Kirby<br />Houston, Texas</dd></div>
-            <div><dt>Hours</dt><dd>Tue – Sat · 11am – 7pm<br />Sun · 12pm – 5pm</dd></div>
-            <div><dt>Contact</dt><dd>(713) 555-0142<br />hello@maisonardent.com</dd></div>
-          </dl>
-          <a href="#" class="btn">Book a private fitting</a>
-        </div>
+          <div class="foot__base">
+            <span>© 2026 Maison Ardent · Concept website</span>
+            <a href="classic.html">View the classic edition</a>
+          </div>
+        </footer>
       </section>
     </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__top">
-        <form class="footer__form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thank you';">
-          <label for="email">Letters from the atelier, four times a year.</label>
-          <div><input id="email" type="email" placeholder="Your email" required /><button type="submit">Subscribe</button></div>
-        </form>
-        <ul class="footer__links">
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Shipping &amp; returns</a></li>
-          <li><a href="#">Care guide</a></li>
-        </ul>
-      </div>
-      <div class="footer__mark">Ardent</div>
-      <p class="footer__small">© 2026 Maison Ardent · Concept website</p>
-    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>
